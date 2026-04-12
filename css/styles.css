@@ -35,7 +35,7 @@ main {
 }
 
 fieldset {
-    border: 2px solid #170c7c;
+    border: 2px solid #2312c0;
     padding: 20px;
     border-radius: 5px;
 }
@@ -60,7 +60,7 @@ input {
     padding: 10px;
     border: 1px solid #000000;
     border-radius: 4px;
-    outline-color: #ffc300;
+    outline-color: #4b3b08;
 }
 
 button {
