@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirección de Envío</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestión de Clientes</h1>
+    </header>
+
+    <main>
+     
+        <section class="form-section">
+            <div class="form-section-title">
+                <div class="icon">📍</div>
+                Dirección de Envío
+            </div>
+            <p class="form-section-subtitle">Registra tu dirección exacta para la entrega de productos</p>
+
+            <form name="frmDireccion" method="post" action="#">
+                <fieldset>
+                    <legend>Datos de Ubicación</legend>
+                    <div class="form-grid">
+                        <div class="form-group form-full">
+                            <label for="alias_dir">Nombre de la dirección (Alias) <span class="required">*</span></label>
+                            <input type="text" id="alias_dir" name="alias_dir"
+                                   placeholder="Ej: Casa, Trabajo, Casa de mis padres"
+                                   required autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="departamento">Departamento <span class="required">*</span></label>
+                            <select id="departamento" name="departamento" required>
+                                <option value="">Seleccione...</option>
+                                <option value="lima">Lima</option>
+                                <option value="arequipa">Arequipa</option>
+                                <option value="cusco">Cusco</option>
+                                <option value="piura">Piura</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="distrito">Distrito <span class="required">*</span></label>
+                            <input type="text" id="distrito" name="distrito"
+                                   placeholder="Ej: Lurigancho-Chosica" required>
+                        </div>
+
+                        <div class="form-group form-full">
+                            <label for="direccion_exacta">Dirección Exacta (Calle, Nro, Dpto) <span class="required">*</span></label>
+                            <input type="text" id="direccion_exacta" name="direccion_exacta"
+                                   placeholder="Av. Principal 123, Dpto 401" required>
+                        </div>
+
+                        <div class="form-group form-full">
+                            <label for="referencia">Referencia de llegada</label>
+                         
+                            <textarea id="referencia" name="referencia" rows="2"
+                                      placeholder="Ej: Frente al parque central, casa color verde con rejas negras"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset style="margin-top: 20px; border: none; padding: 0;">
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dir_predeterminada" checked>
+                            Establecer como dirección predeterminada para mis compras
+                        </label>
+                    </div>
+
+                    <div class="form-actions" style="margin-top: 20px;">
+                        <button type="reset" class="btn btn-secondary">Limpiar Campos</button>
+                        <button type="submit" class="btn btn-primary">Guardar Dirección →</button>
+                    </div>
+
+                    <div class="form-footer" style="text-align: center; margin-top: 15px;">
+                        <a href="actualizar-perfil.html">← Volver a mi perfil</a>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Taller de Programación Web UTP - Avance Semana 5</p>
+    </footer>
+
+</body>
+</html>
