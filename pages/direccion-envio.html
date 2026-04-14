@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dirección de Envío - Módulo 1</title>
+    <title>Dirección de Envío</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    
+
     <header>
         <h1>Gestión de Clientes</h1>
     </header>
 
     <main>
+     
         <section class="form-section">
             <div class="form-section-title">
-                <div class="icon"></div>
+                <div class="icon">📍</div>
                 Dirección de Envío
             </div>
             <p class="form-section-subtitle">Registra tu dirección exacta para la entrega de productos</p>
@@ -26,7 +27,9 @@
                     <div class="form-grid">
                         <div class="form-group form-full">
                             <label for="alias_dir">Nombre de la dirección (Alias) <span class="required">*</span></label>
-                            <input type="text" id="alias_dir" name="alias_dir" placeholder="Ej: Casa, Trabajo, Casa de mis padres" required autofocus>
+                            <input type="text" id="alias_dir" name="alias_dir"
+                                   placeholder="Ej: Casa, Trabajo, Casa de mis padres"
+                                   required autofocus>
                         </div>
 
                         <div class="form-group">
@@ -43,17 +46,21 @@
 
                         <div class="form-group">
                             <label for="distrito">Distrito <span class="required">*</span></label>
-                            <input type="text" id="distrito" name="distrito" placeholder="Ej: Lurigancho-Chosica" required>
+                            <input type="text" id="distrito" name="distrito"
+                                   placeholder="Ej: Lurigancho-Chosica" required>
                         </div>
 
                         <div class="form-group form-full">
                             <label for="direccion_exacta">Dirección Exacta (Calle, Nro, Dpto) <span class="required">*</span></label>
-                            <input type="text" id="direccion_exacta" name="direccion_exacta" placeholder="Av. Principal 123, Dpto 401" required>
+                            <input type="text" id="direccion_exacta" name="direccion_exacta"
+                                   placeholder="Av. Principal 123, Dpto 401" required>
                         </div>
 
                         <div class="form-group form-full">
                             <label for="referencia">Referencia de llegada</label>
-                            <textarea id="referencia" name="referencia" rows="2" placeholder="Ej: Frente al parque central, casa color verde con rejas negras"></textarea>
+                         
+                            <textarea id="referencia" name="referencia" rows="2"
+                                      placeholder="Ej: Frente al parque central, casa color verde con rejas negras"></textarea>
                         </div>
                     </div>
                 </fieldset>
@@ -68,11 +75,11 @@
 
                     <div class="form-actions" style="margin-top: 20px;">
                         <button type="reset" class="btn btn-secondary">Limpiar Campos</button>
-                        <button type="submit" class="btn btn-primary btn-block">Guardar Dirección →</button>
+                        <button type="submit" class="btn btn-primary">Guardar Dirección →</button>
                     </div>
-                    
+
                     <div class="form-footer" style="text-align: center; margin-top: 15px;">
-                        <a href="perfil-usuario.html">← Volver a mi perfil</a>
+                        <a href="actualizar-perfil.html">← Volver a mi perfil</a>
                     </div>
                 </fieldset>
             </form>

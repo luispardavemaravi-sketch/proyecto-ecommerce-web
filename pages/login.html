@@ -7,54 +7,61 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    
+
     <header>
         <h1>Gestión de Clientes</h1>
     </header>
 
     <main>
-        
-        <section class="campos">
-            <div class="form-section-title">
-                <div class="icon"></div>
-                <h2>Iniciar Sesión</h2>
-            </div>
-            <p class="campos">Ingresa tus credenciales de cliente para continuar</p>
 
-            <form name="campos" method="post" action="#">
+       
+        <section class="form-section">
+            <div class="form-section-title">
+                <div class="icon">🔐</div>
+               
+                Iniciar Sesión
+            </div>
+    
+            <p class="form-section-subtitle">Ingresa tus credenciales de cliente para continuar</p>
+
+        
+            <form name="frmLogin" method="post" action="#">
                 <fieldset>
                     <legend>Identificación de Cliente</legend>
 
-                    <div class="campos">
+                   
+                    <div class="form-grid">
                         <div class="form-group form-full">
                             <label for="login_email">Correo Electrónico <span class="required">*</span></label>
-                            <input type="email" id="login_email" name="login_email" 
+                            <input type="email" id="login_email" name="login_email"
                                    placeholder="usuario@ejemplo.com" required autofocus>
                         </div>
 
-                        <div class="campos">
+                        <div class="form-group form-full">
                             <label for="login_password">Contraseña <span class="required">*</span></label>
-                            <input type="password" id="login_password" name="login_password" 
+                            <input type="password" id="login_password" name="login_password"
                                    placeholder="********" required minlength="8">
                         </div>
                     </div>
 
-                    <div class="campos">
+                
+                    <div class="checkbox-group" style="margin-top: 12px;">
                         <label class="checkbox-item">
                             <input type="checkbox" name="login_recordar">
                             Mantener sesión iniciada
                         </label>
                     </div>
 
-                    <div class="campos">
+                    <div class="form-actions">
                         <button type="submit" class="btn btn-primary btn-block">
                             Acceder al Panel de Cliente →
                         </button>
                     </div>
 
-                    <div class="campos" style="text-align: center; margin-top: 15px;">
+                 
+                    <div class="form-footer" style="text-align: center; margin-top: 15px;">
                         <a href="recuperar-password.html">¿Olvidaste tu contraseña?</a>
-                        <p>¿Nuevo cliente? <a href="registroUsuario.html" style="font-weight: 600;">Crea tu cuenta aquí</a></p>
+                        <p>¿Nuevo cliente? <a href="registro.html" style="font-weight: 600;">Crea tu cuenta aquí</a></p>
                     </div>
                 </fieldset>
             </form>
